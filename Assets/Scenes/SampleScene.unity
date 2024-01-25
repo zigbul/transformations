@@ -135,9 +135,9 @@ GameObject:
   - component: {fileID: 153652660}
   - component: {fileID: 153652659}
   - component: {fileID: 153652658}
-  - component: {fileID: 153652657}
-  - component: {fileID: 153652656}
   - component: {fileID: 153652655}
+  - component: {fileID: 153652661}
+  - component: {fileID: 153652662}
   m_Layer: 0
   m_Name: Cube2
   m_TagString: Untagged
@@ -172,33 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1f8d85692d4214f982c03460483a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0.001
---- !u!114 &153652656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153652653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7298096fc7c4ffc4c955c966ddbc9440, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 0.5
---- !u!114 &153652657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153652653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39cded1cac07e3f4f952b1d969c8244d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 0.1
+  _speed: 0.25
 --- !u!65 &153652658
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -270,6 +244,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153652653}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &153652661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153652653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cded1cac07e3f4f952b1d969c8244d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 5
+--- !u!114 &153652662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153652653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7298096fc7c4ffc4c955c966ddbc9440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 100
 --- !u!1 &496008862
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1f8d85692d4214f982c03460483a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0.001
+  _speed: 0.5
 --- !u!136 &496008864
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 641336533}
   - component: {fileID: 641336532}
   - component: {fileID: 641336531}
-  - component: {fileID: 641336530}
+  - component: {fileID: 641336534}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -426,19 +426,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1564589128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &641336530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641336528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39cded1cac07e3f4f952b1d969c8244d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 0.01
 --- !u!135 &641336531
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -510,6 +497,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641336528}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &641336534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641336528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cded1cac07e3f4f952b1d969c8244d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7298096fc7c4ffc4c955c966ddbc9440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0.1
+  _speed: 100
 --- !u!65 &1152420479
 BoxCollider:
   m_ObjectHideFlags: 0

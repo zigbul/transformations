@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotate : MonoBehaviour
+public class Scaler : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
-    void Update()
+    private void Update()
     {
-        transform.rotation *= Quaternion.Euler(0, _speed, 0);
+        transform.localScale += Vector3.one * _speed * Time.deltaTime;
     }
 }
